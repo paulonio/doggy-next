@@ -1,5 +1,6 @@
-import { FC } from "react";
-import { StyledPlate } from "./styled";
+import { FC } from 'react';
+import { StyledPlate } from './styled';
+import Typography from '../typography';
 
 type Props = {
   description?: string;
@@ -8,9 +9,11 @@ type Props = {
 const DiscountPlate: FC<Props> = ({ description }) => {
   return (
     <StyledPlate>
-      <p>{description}</p>
+      <Typography size="l" weight="bold">
+        {description}
+      </Typography>
     </StyledPlate>
   );
-}
+};
 
 export default DiscountPlate;

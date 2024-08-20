@@ -12,7 +12,6 @@ type ImageWrapperProps = {
   $borderWidth?: BorderWidth;
 };
 
-// TODO refactor widths
 const borderWidthValues: Record<BorderWidth, string> = {
   xs: '6',
   s: '9',
@@ -25,13 +24,19 @@ const borderColorsMap: Record<Color, string> = {
   dark: '#B78E80',
 };
 
-export const StyledContainer = styled.div`
-  width: 100%;
-  max-width: 1495px;
-  margin: 0 auto;
+export const ItemContent = styled.div`
+  width: 30%;
+  max-width: 435px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: max-content;
+  }
 `;
 
-// TODO remove duplicating
 export const ImageWrapper = styled.div<ImageWrapperProps>`
   margin-bottom: 42px;
   width: 100%;
@@ -50,44 +55,4 @@ export const ImageWrapper = styled.div<ImageWrapperProps>`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-`;
-
-// Trending
-export const TrendingPackageWrapper = styled.div`
-  padding: 56px 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-
-  @media screen and (max-width: 1250px) {
-    padding: 0;
-    flex-direction: column;
-    row-gap: 16px;
-  }
-`;
-
-export const TrendingPackageContent = styled.div`
-  width: 50%;
-  max-width: 650px;
-  padding: 0px 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 64px;
-
-  @media screen and (max-width: 1250px) {
-    width: 100%;
-    row-gap: 32px;
-  }
-
-  @media screen and (max-width: 570px) {
-    padding: 0;
-  }
-`;
-
-export const PageWrapper = styled.section`
-  height: calc(100vh - 132px);
-  display: grid;
-  place-items: center;
 `;

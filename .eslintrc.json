@@ -1,3 +1,35 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["airbnb", "airbnb-typescript", "eslint-config-prettier", "next/core-web-vitals"],
+  "plugins": ["eslint-plugin-prettier"],
+  "rules": { 
+    "linebreak-style": [0],
+    "react/jsx-filename-extension": [0], 
+    "react/function-component-definition": [0],
+    "react/require-default-props": [0],
+    "react/no-array-index-key": [0],
+    "react/prop-types": [0],
+    "react/jsx-props-no-spreading": [0],
+    "jsx-a11y/click-events-have-key-events": [0],
+    "no-multi-assign": [0],
+    "arrow-body-style": [0],
+    "import/no-unresolved": [0], 
+    "import/prefer-default-export": [0],
+    "import/extensions": [0],
+    "prefer-destructuring": [0],
+    "react/button-has-type": [0],
+    "no-new": [0],
+    "no-promise-executor-return": [0],
+    "no-param-reassign": [0],
+    "class-methods-use-this": [0],
+    "no-plusplus": [0],
+    "prettier/prettier": ["error"]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
