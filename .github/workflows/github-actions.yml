@@ -27,8 +27,5 @@ jobs:
       - name: Run unit tests
         run: yarn jest
 
-      - name: Run dev server
-        run: yarn dev
-
       - name: Run cypress tests
-        run: yarn cy:run
+        run: yarn test:cy:run
