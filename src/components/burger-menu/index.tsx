@@ -1,6 +1,7 @@
 'use client';
 
 import { FC, useEffect } from 'react';
+
 import { BurgerIcon, Line, Overlay } from './styled';
 
 type Props = {

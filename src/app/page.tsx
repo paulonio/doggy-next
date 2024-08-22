@@ -1,9 +1,10 @@
-import ItemsView from '@/components/items-view';
-import HomePageScreen from '@/components/home-page-screen';
 import Button from '@/components/button';
-import { Dog, parseResponse } from '@/utils/api';
-import Typography from '@/components/typography';
+import HomePageScreen from '@/components/home-page-screen';
+import ItemsView from '@/components/items-view';
 import ProductItem from '@/components/product-item';
+import Typography from '@/components/typography';
+import { Dog, parseResponse } from '@/utils/api';
+
 import { Image, ImageWrapper, TrendingPackageContent, TrendingPackageWrapper } from './styled';
 
 export default async function Home() {

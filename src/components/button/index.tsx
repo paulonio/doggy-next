@@ -1,5 +1,6 @@
-import { ButtonHTMLAttributes, FC } from 'react';
 import { LinkProps } from 'next/link';
+import { ButtonHTMLAttributes, FC } from 'react';
+
 import { Background, StyledButton, StyledLink } from './styled';
 
 type Props = {

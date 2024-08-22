@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+
 import BurgerMenu from '@/components/burger-menu';
+import { LINKS_MOCK } from '@/constants/header';
 import { isEqualStrings, removeLeadingSlash } from '@/utils/string-utils';
 
 import { StyledHeader, StyledLink, StyledNav } from './styled';
-import { LINKS_MOCK } from '@/constants/header';
 
 const Header = () => {
   const path = usePathname();

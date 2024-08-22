@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { Cormorant } from 'next/font/google';
 
 import DiscountPlate from '@/components/discount-plate';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
 import ErrorBoundary from '@/components/error-boundary';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 import { offerText } from '@/constants/offers';
 
 import StyledComponentsRegistry from './registry';

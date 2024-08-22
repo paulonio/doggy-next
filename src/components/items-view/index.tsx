@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+
 import { StyledItems, StyledTitle, Wrapper } from './styled';
 
 type Props = {

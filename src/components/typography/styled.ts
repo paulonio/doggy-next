@@ -1,8 +1,9 @@
 'use client';
 
 import { styled } from 'styled-components';
-import { TypographySize } from '@/types/common';
+
 import { sizeValues } from '@/constants/sizes';
+import { TypographySize } from '@/types/common';
 
 export type FontWeight = 'regular' | 'bold';
 

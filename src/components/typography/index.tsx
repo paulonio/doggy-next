@@ -1,6 +1,8 @@
 import { FC, ReactNode } from 'react';
-import { FontWeight, StyledTypography } from './styled';
+
 import { TypographySize } from '@/types/common';
+
+import { FontWeight, StyledTypography } from './styled';
 
 type Props = {
   size: TypographySize;

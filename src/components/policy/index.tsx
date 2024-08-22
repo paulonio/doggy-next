@@ -1,6 +1,7 @@
-import { PolicyItem, Wrapper } from './styled';
 import { StyledLink } from '@/components/footer/styled';
 import Typography from '@/components/typography';
+
+import { PolicyItem, Wrapper } from './styled';
 
 const Policy = () => {
   return (

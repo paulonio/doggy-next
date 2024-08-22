@@ -1,4 +1,5 @@
 import emailjs from '@emailjs/browser';
+
 import { Dog, getDogs, parseResponse, sendEmail } from '@/utils/api';
 
 const SUCCESS_RESPONSE_MOCK: Dog[] = [

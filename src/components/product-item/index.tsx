@@ -1,6 +1,8 @@
 import { FC } from 'react';
-import { Dog } from '@/utils/api';
+
 import Typography from '@/components/typography';
+import { Dog } from '@/utils/api';
+
 import { Image, ImageWrapper, ItemContent } from './styled';
 
 type Props = {

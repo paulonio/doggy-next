@@ -1,4 +1,8 @@
+import EmailForm from '@/components/email-form';
 import Policy from '@/components/policy';
+import { NAVIGATION_LINKS_MOCK, SERVICES_LINKS_MOCK } from '@/constants/footer';
+import { SOCIALS } from '@/constants/socials';
+
 import {
   Content,
   ContentWrapper,
@@ -8,9 +12,6 @@ import {
   StyledLink,
   Wrapper,
 } from './styled';
-import EmailForm from '@/components/email-form';
-import { SOCIALS } from '@/constants/socials';
-import { NAVIGATION_LINKS_MOCK, SERVICES_LINKS_MOCK } from '@/constants/footer';
 
 const Footer = () => {
   return (

@@ -1,13 +1,15 @@
 'use client';
 
+import { yupResolver } from '@hookform/resolvers/yup';
 import { ChangeEvent, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+
 import Button from '@/components/button';
-import { Form, Input, InputWrapper } from './styled';
+import Typography from '@/components/typography';
 import { sendEmail } from '@/utils/api';
-import Typography from '../typography';
+
+import { Form, Input, InputWrapper } from './styled';
 
 export type FormType = {
   email: string;

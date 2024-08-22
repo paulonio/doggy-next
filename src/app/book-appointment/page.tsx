@@ -1,6 +1,5 @@
-import Typography from '@/components/typography';
-
 import { PageWrapper } from '@/app/styled';
+import Typography from '@/components/typography';
 
 const BookAppointmentPage = () => {
   return (

@@ -1,4 +1,5 @@
 import emailjs from '@emailjs/browser';
+
 import { FormType } from '@/components/email-form';
 
 export type Dog = {

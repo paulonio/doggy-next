@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import { styled } from 'styled-components';
 
-import { Size } from '@/types/common';
 import { sizeValues } from '@/constants/sizes';
+import { Size } from '@/types/common';
 
 type LinkSize = Extract<Size, 's' | 'm'>;
 

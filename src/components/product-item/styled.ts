@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+
 import { Size } from '@/types/common';
 
 type Color = 'light' | 'medium' | 'dark';

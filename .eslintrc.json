@@ -23,7 +23,45 @@
     "no-param-reassign": [0],
     "class-methods-use-this": [0],
     "no-plusplus": [0],
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "import/order": [
+      1, 
+      {
+        "groups": [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index"
+        ],
+        "pathGroups": [
+          { 
+            "pattern": "components", 
+            "group": "internal" 
+          }, 
+          { 
+            "pattern": "common", 
+            "group": "internal" 
+          }, 
+          { 
+            "pattern": "routes/ **", 
+            "group": "internal" 
+          }, 
+          { 
+            "pattern": "assets/**", 
+            "group": "internal", 
+            "position": "after" 
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["internal"], 
+        "alphabetize": { 
+          "order": "asc", 
+          "caseInsensitive": true 
+        },
+        "newlines-between": "always"
+      } 
+    ]
   },
   "env": {
     "browser": true,

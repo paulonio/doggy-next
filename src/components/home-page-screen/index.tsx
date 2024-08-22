@@ -1,4 +1,5 @@
 import Button from '@/components/button';
+
 import { Content, Wrapper } from './styled';
 
 const HomePageScreen = () => {

@@ -1,5 +1,7 @@
 import { FC } from 'react';
+
 import { StyledPlate } from './styled';
+
 import Typography from '../typography';
 
 type Props = {
