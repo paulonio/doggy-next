@@ -4,19 +4,9 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import BurgerMenu from '@/components/burger-menu';
 import { isEqualStrings, removeLeadingSlash } from '@/utils/string-utils';
-import { Link } from '@/types/common';
 
 import { StyledHeader, StyledLink, StyledNav } from './styled';
-
-const LINKS_MOCK: Link[] = [
-  { href: '/', text: 'Home' },
-  { href: '/info', text: 'Info' },
-  { href: '/spa-services', text: 'Spa Services' },
-  { href: '/book-appointment', text: 'Book Appointment' },
-  { href: '/blog', text: 'Blog' },
-  { href: '/about-us', text: 'About us' },
-  { href: '/contact-us', text: 'Contact us' },
-];
+import { LINKS_MOCK } from '@/constants/header';
 
 const Header = () => {
   const path = usePathname();
