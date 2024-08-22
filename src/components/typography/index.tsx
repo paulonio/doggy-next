@@ -6,11 +6,12 @@ type Props = {
   size: TypographySize;
   children: ReactNode;
   weight?: FontWeight;
+  dataTestId?: string;
 };
 
-const Typography: FC<Props> = ({ size, weight, children }) => {
+const Typography: FC<Props> = ({ size, weight, children, dataTestId }) => {
   return (
-    <StyledTypography $size={size} $wieght={weight}>
+    <StyledTypography $size={size} $wieght={weight} data-testId={dataTestId}>
       {children}
     </StyledTypography>
   );

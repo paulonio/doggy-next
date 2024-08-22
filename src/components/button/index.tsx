@@ -2,20 +2,23 @@ import { ButtonHTMLAttributes, FC } from 'react';
 import { LinkProps } from 'next/link';
 import { Background, StyledButton, StyledLink } from './styled';
 
-type Props = { background?: Background } & ButtonHTMLAttributes<HTMLButtonElement> &
+type Props = {
+  background?: Background;
+  dataTestId?: string;
+} & ButtonHTMLAttributes<HTMLButtonElement> &
   Partial<LinkProps>;
 
-const Button: FC<Props> = ({ href, children, background = 'primary' }, props) => {
+const Button: FC<Props> = ({ href, children, background = 'primary', dataTestId }, props) => {
   if (href) {
     return (
-      <StyledLink href={href} $background={background} {...props}>
+      <StyledLink href={href} $background={background} data-testid={dataTestId} {...props}>
         {children}
       </StyledLink>
     );
   }
 
   return (
-    <StyledButton $background={background} {...props}>
+    <StyledButton $background={background} data-testid={dataTestId} {...props}>
       {children}
     </StyledButton>
   );

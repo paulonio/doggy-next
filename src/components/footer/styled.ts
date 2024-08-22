@@ -102,3 +102,23 @@ export const StyledLink = styled(Link)<LinkProps>`
     line-height: 24px;
   }
 `;
+
+export const SocialsWrapper = styled.div`
+  width: 100%;
+  max-width: 385px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const SocialLink = styled.a`
+  margin-top: 32px;
+
+  & > svg {
+    fill: #e89b93;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: #b78e80;
+    }
+  }
+`;

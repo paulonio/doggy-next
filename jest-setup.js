@@ -1,0 +1,4 @@
+process.env.API_KEY = 'API_KEY'
+process.env.NEXT_PUBLIC_SERVICE_ID = 'SERVICE_ID'
+process.env.NEXT_PUBLIC_TEMPLATE_ID = 'TEMPLATE_ID'
+process.env.NEXT_PUBLIC_USER_ID = 'USER_ID'

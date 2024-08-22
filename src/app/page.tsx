@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <>
       <HomePageScreen />
-      <ItemsView title="Trending Spa Package" isOneChild>
+      <ItemsView title="Trending Spa Package" isOneChild data-testid="spa-package-title">
         <TrendingPackageWrapper>
           <ImageWrapper $borderWidth="s" $borderColor="light">
             <Image src={spaPackage.image_link} alt={spaPackage.name} />

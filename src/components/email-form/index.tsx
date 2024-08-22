@@ -55,10 +55,15 @@ const EmailForm = () => {
             name="email"
             value={emailValue}
             onChange={handleInputChange}
+            data-testId="email-input"
           />
-          <Typography size="s">{errors.email?.message}</Typography>
+          <Typography size="s" dataTestId="email-error">
+            {errors.email?.message}
+          </Typography>
         </div>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" dataTestId="email-submit-button">
+          Submit
+        </Button>
       </InputWrapper>
     </Form>
   );

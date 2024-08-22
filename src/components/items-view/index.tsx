@@ -11,7 +11,7 @@ type Props = {
 const ItemsView: FC<Props> = ({ title, isOneChild, children, button }) => {
   return (
     <Wrapper>
-      <StyledTitle>{title}</StyledTitle>
+      <StyledTitle data-testid={title}>{title}</StyledTitle>
       <StyledItems $isOneChild={isOneChild}>{children}</StyledItems>
       {button}
     </Wrapper>

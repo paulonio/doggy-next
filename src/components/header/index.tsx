@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import BurgerMenu from '@/components/burger-menu';
-import { StyledHeader, StyledLink, StyledNav } from './styled';
-import { isEqualStrings } from '@/utils/string-utils';
+import { isEqualStrings, removeLeadingSlash } from '@/utils/string-utils';
 import { Link } from '@/types/common';
+
+import { StyledHeader, StyledLink, StyledNav } from './styled';
 
 const LINKS_MOCK: Link[] = [
   { href: '/', text: 'Home' },
@@ -39,6 +40,7 @@ const Header = () => {
             $isActive={isEqualStrings(path, href)}
             key={text}
             onClick={handleHideBurgerMenu}
+            data-testid={removeLeadingSlash(href)}
           >
             {text}
           </StyledLink>
